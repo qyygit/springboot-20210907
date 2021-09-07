@@ -1,5 +1,7 @@
 package com.qyy.boot.controller;
 
+import com.qyy.boot.bean.Car;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,9 +14,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class HelloController {
 
+    @Autowired
+    Car car;
+
     @RequestMapping(value = "/hello")
     public String hello(){
         return " Spring boot 2.2 你好";
+    }
+
+    @RequestMapping(value = "/car")
+    public Car car(){
+        return car;
     }
 
 }
