@@ -1,0 +1,11 @@
+server:
+  port: 8888
+
+# 资源访问前缀
+#spring:
+#  mvc:
+#    static-path-pattern: /qyy/**
+
+#  资源默认路径
+#  resources:
+#    static-locations: classpath:/qyy/

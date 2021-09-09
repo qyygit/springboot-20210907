@@ -19,12 +19,13 @@ public class HelloController {
 
     @RequestMapping(value = "/hello")
     public String hello(){
-        return " Spring boot 2.2 你好";
+        return " Spring boot 2.2 你好啊6666";
     }
 
-    @RequestMapping(value = "/car")
-    public Car car(){
-        return car;
-    }
+
+//    @RequestMapping(value = "/car")
+//    public Car car(){
+//        return car;
+//    }
 
 }
